@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.example.Mapper.UserMapper">
+<!--    写的查询集合泛型-->
+<select id="queryByAge" resultType="org.example.pojo.User">
+    select * from user where age>#{age}
+</select>
+</mapper>
